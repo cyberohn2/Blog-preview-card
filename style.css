@@ -24,6 +24,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     font-family: var(--ff);
+    font-weight: var(--fwgt-normal);
 }
 
 .card{
@@ -52,4 +53,25 @@ body{
     color: var(--grey);
     font-weight: var(--fwgt-bold);
     margin-bottom: 1rem;
+}
+.card-title{
+    margin-bottom: 1rem;
+    transition: 100ms ease-out;
+    cursor: pointer;
+}
+.card-title:hover{
+    color: var(--yellow)
+}
+.card-description{
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+    font-weight: var(--fwgt-bold);
+    gap: .75rem;
+}
+.user > img{
+    width: 30px;
 }
