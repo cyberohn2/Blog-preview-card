@@ -12,7 +12,7 @@
     --black: hsl(0, 0%, 7%);
 
     --fs: 16px;
-    --fwgt-npormal: 500;
+    --fwgt-normal: 500;
     --fwgt-bold: 800;
     --ff: "Figtree", sans-serif;
 }
@@ -23,11 +23,33 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: var(--ff);
 }
 
 .card{
     background-color: white;
     border: 1px solid var(--black);
     border-radius: 12px;
+    box-shadow: 5px 5px 0 var(--black);
+    width: fit-content;
+    max-width:350px;
+    padding: 1rem;
 }
-
+.card-image{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+.card-text > p:first-child {
+    padding: .5rem;
+    border-radius: 6px;
+    background-color: var(--yellow);
+    font-weight: var(--fwgt-bold);
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+.card-text > p:nth-child(2){
+    color: var(--grey);
+    font-weight: var(--fwgt-bold);
+    margin-bottom: 1rem;
+}
